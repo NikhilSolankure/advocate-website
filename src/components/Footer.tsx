@@ -14,7 +14,7 @@ export default function Footer() {
               <span className="text-2xl font-serif font-semibold tracking-tight">Adv. Balraj Salokhe</span>
             </Link>
             <p className="text-navy-200 text-sm leading-relaxed">
-              Justice is not just a word—it's a promise. We provide relentless advocacy and strategic counsel for those who demand excellence and results.
+              Justice is not just a word—it's a promise. I provide relentless advocacy and strategic counsel for those who demand excellence and results.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="w-10 h-10 rounded-full bg-navy-800 flex items-center justify-center text-navy-200 hover:bg-gold-500 hover:text-navy-950 transition-colors">
@@ -33,11 +33,9 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-serif font-medium mb-6 text-white">Quick Links</h4>
             <ul className="space-y-3 text-navy-200 text-sm">
-              <li><Link href="#about" className="hover:text-gold-400 transition-colors">About the Firm</Link></li>
+              <li><Link href="#about" className="hover:text-gold-400 transition-colors">About Me</Link></li>
               <li><Link href="#practice-areas" className="hover:text-gold-400 transition-colors">Practice Areas</Link></li>
               <li><Link href="#results" className="hover:text-gold-400 transition-colors">Case Results</Link></li>
-              <li><Link href="#testimonials" className="hover:text-gold-400 transition-colors">Client Testimonials</Link></li>
-              <li><Link href="#faq" className="hover:text-gold-400 transition-colors">Legal FAQ</Link></li>
             </ul>
           </div>
 
@@ -46,16 +44,13 @@ export default function Footer() {
             <h4 className="text-lg font-serif font-medium mb-6 text-white">Practice Areas</h4>
             <ul className="space-y-3 text-navy-200 text-sm">
               <li><Link href="#" className="hover:text-gold-400 transition-colors">Criminal Defense</Link></li>
-              <li><Link href="#" className="hover:text-gold-400 transition-colors">Corporate Law</Link></li>
               <li><Link href="#" className="hover:text-gold-400 transition-colors">Family & Divorce</Link></li>
-              <li><Link href="#" className="hover:text-gold-400 transition-colors">Civil Litigation</Link></li>
-              <li><Link href="#" className="hover:text-gold-400 transition-colors">Intellectual Property</Link></li>
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h4 className="text-lg font-serif font-medium mb-6 text-white">Contact Us</h4>
+            <h4 className="text-lg font-serif font-medium mb-6 text-white">Contact Me</h4>
             <ul className="space-y-4 text-navy-200 text-sm">
               <li className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-gold-500 shrink-0" />

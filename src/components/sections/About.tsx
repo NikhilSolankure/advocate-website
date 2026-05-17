@@ -48,7 +48,7 @@ export default function About() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <div className="mb-2">
-              <span className="text-gold-500 font-semibold tracking-wider uppercase text-sm">Lead Advocate & Founder</span>
+              <span className="text-gold-500 font-semibold tracking-wider uppercase text-sm">Advocate</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-navy-900 dark:text-white mb-6">
               Balraj Salokhe
@@ -56,10 +56,10 @@ export default function About() {
             
             <div className="space-y-6 text-gray-600 dark:text-gray-300 text-lg leading-relaxed mb-8">
               <p>
-                For over 15 years, I have believed that the law is a shield for the vulnerable and a sword against injustice. My practice isn't just about winning cases; it's about restoring peace of mind to those facing the most daunting moments of their lives.
+                For over 5 years, I have believed that the law is a shield for the vulnerable and a sword against injustice. My practice isn't just about winning cases; it's about restoring peace of mind to those facing the most daunting moments of their lives.
               </p>
               <p>
-                From complex corporate litigation to high-stakes criminal defense, my approach is rooted in meticulous preparation, aggressive advocacy, and an unwavering commitment to the truth. We don't just take cases—we take up causes.
+                From high-stakes criminal defense to sensitive family and divorce matters, my approach is rooted in meticulous preparation, aggressive advocacy, and an unwavering commitment to the truth. I don't just take cases—I take up causes.
               </p>
             </div>
 

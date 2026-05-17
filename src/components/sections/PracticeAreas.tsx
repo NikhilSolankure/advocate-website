@@ -8,32 +8,12 @@ const practices = [
   {
     icon: <ShieldAlert className="w-8 h-8" />,
     title: "Criminal Defense",
-    description: "Aggressive defense for white-collar crimes, federal charges, and serious felonies. We protect your freedom."
-  },
-  {
-    icon: <Briefcase className="w-8 h-8" />,
-    title: "Corporate Law",
-    description: "Strategic counsel for mergers, acquisitions, compliance, and complex business litigation."
+    description: "Aggressive defense for criminal charges, felonies, and complex legal matters. I protect your freedom and rights."
   },
   {
     icon: <Users className="w-8 h-8" />,
     title: "Family & Divorce",
-    description: "Compassionate representation in high-net-worth divorce, custody, and family disputes."
-  },
-  {
-    icon: <Home className="w-8 h-8" />,
-    title: "Property & Real Estate",
-    description: "Resolving property disputes, commercial leasing, and real estate transactions with precision."
-  },
-  {
-    icon: <Gavel className="w-8 h-8" />,
-    title: "Civil Litigation",
-    description: "Fierce advocacy in contract disputes, torts, and civil rights violations."
-  },
-  {
-    icon: <FileText className="w-8 h-8" />,
-    title: "Intellectual Property",
-    description: "Safeguarding your trademarks, patents, copyrights, and trade secrets in a digital age."
+    description: "Compassionate representation in divorce, child custody, and sensitive family disputes."
   }
 ];
 
@@ -65,7 +45,7 @@ export default function PracticeAreas() {
             Dedicated Practice Areas
           </h2>
           <p className="text-gray-600 dark:text-gray-300 text-lg">
-            We offer specialized legal services across a range of disciplines. Our deep industry knowledge allows us to deliver exceptional results in even the most complex cases.
+            I offer specialized legal services across a range of disciplines. My deep legal knowledge allows me to deliver exceptional results in even the most complex cases.
           </p>
         </div>
 
@@ -74,7 +54,7 @@ export default function PracticeAreas() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto"
         >
           {practices.map((practice, idx) => (
             <motion.div 

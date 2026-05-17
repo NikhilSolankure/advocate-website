@@ -31,7 +31,7 @@ export default function Hero() {
           </h1>
           
           <p className="text-lg md:text-2xl text-gray-300 mb-10 max-w-2xl font-light leading-relaxed">
-            Relentless advocacy serving Kolhapur and beyond in Criminal Defense, Corporate Law, and High-Stakes Civil Litigation.
+            Relentless advocacy serving Kolhapur and beyond in Criminal Defense and Family & Divorce Matters.
           </p>
           
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
@@ -43,7 +43,7 @@ export default function Hero() {
             </Link>
             <Link href="#practice-areas">
               <button className="w-full sm:w-auto px-8 py-4 bg-transparent border border-white/30 hover:border-white hover:bg-white/5 text-white font-medium rounded-full transition-all duration-300 flex items-center justify-center backdrop-blur-sm">
-                Explore Our Expertise
+                Explore My Expertise
               </button>
             </Link>
           </div>
@@ -60,22 +60,22 @@ export default function Hero() {
         <div className="container mx-auto px-6 md:px-12 py-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center divide-x divide-white/10">
             <div className="flex flex-col items-center justify-center">
-              <span className="text-2xl md:text-3xl font-serif font-bold text-gold-400">500+</span>
-              <span className="text-xs md:text-sm text-gray-400 uppercase tracking-widest mt-1">Cases Won</span>
+              <span className="text-2xl md:text-3xl font-serif font-bold text-gold-400">200+</span>
+              <span className="text-xs md:text-sm text-gray-400 uppercase tracking-widest mt-1">Cases Handled</span>
             </div>
             <div className="flex flex-col items-center justify-center">
-              <span className="text-2xl md:text-3xl font-serif font-bold text-gold-400">15+</span>
+              <span className="text-2xl md:text-3xl font-serif font-bold text-gold-400">5+</span>
               <span className="text-xs md:text-sm text-gray-400 uppercase tracking-widest mt-1">Years Experience</span>
             </div>
             <div className="flex flex-col items-center justify-center">
-              <span className="text-2xl md:text-3xl font-serif font-bold text-gold-400">98%</span>
+              <span className="text-2xl md:text-3xl font-serif font-bold text-gold-400">95%</span>
               <span className="text-xs md:text-sm text-gray-400 uppercase tracking-widest mt-1">Success Rate</span>
             </div>
             <div className="flex flex-col items-center justify-center">
               <div className="flex space-x-1 mb-1">
                 {[1,2,3,4,5].map(i => <Award key={i} className="w-5 h-5 text-gold-400" fill="currentColor" />)}
               </div>
-              <span className="text-xs md:text-sm text-gray-400 uppercase tracking-widest">Top Rated Firm</span>
+              <span className="text-xs md:text-sm text-gray-400 uppercase tracking-widest">Dedicated Advocate</span>
             </div>
           </div>
         </div>

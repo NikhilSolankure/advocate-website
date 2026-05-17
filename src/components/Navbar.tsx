@@ -20,8 +20,6 @@ export default function Navbar() {
     { name: "About", href: "#about" },
     { name: "Practice Areas", href: "#practice-areas" },
     { name: "Results", href: "#results" },
-    { name: "Testimonials", href: "#testimonials" },
-    { name: "FAQ", href: "#faq" },
   ];
 
   return (

@@ -7,16 +7,34 @@ import { useState } from "react";
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    caseType: "",
+    description: ""
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    setFormData(prev => ({
+      ...prev,
+      [e.target.name]: e.target.value
+    }));
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    // Simulate API call
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitted(true);
-      setTimeout(() => setSubmitted(false), 5000);
-    }, 1500);
+
+    const message = `Hello Adv. Balraj Salokhe,%0A%0AMy name is ${formData.name}.%0A*Case Type:* ${formData.caseType || "Not specified"}%0A*Description:* ${formData.description || "None"}%0A*Phone:* ${formData.phone}%0A*Email:* ${formData.email}%0A%0AI would like to request a consultation.`;
+    const whatsappUrl = `https://wa.me/917756040506?text=${message}`;
+    
+    window.open(whatsappUrl, "_blank");
+    
+    setIsSubmitting(false);
+    setSubmitted(true);
+    setTimeout(() => setSubmitted(false), 5000);
+    setFormData({ name: "", phone: "", email: "", caseType: "", description: "" });
   };
 
   return (
@@ -60,6 +78,9 @@ export default function Contact() {
                     <input 
                       required
                       type="text" 
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
                       className="w-full px-4 py-3 rounded-lg bg-white dark:bg-navy-950 border border-gray-200 dark:border-navy-700 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-all dark:text-white"
                       placeholder="John Doe"
                     />
@@ -69,8 +90,11 @@ export default function Contact() {
                     <input 
                       required
                       type="tel" 
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleChange}
                       className="w-full px-4 py-3 rounded-lg bg-white dark:bg-navy-950 border border-gray-200 dark:border-navy-700 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-all dark:text-white"
-                      placeholder="+1 (555) 000-0000"
+                      placeholder="+91 0000000000"
                     />
                   </div>
                 </div>
@@ -81,18 +105,24 @@ export default function Contact() {
                     <input 
                       required
                       type="email" 
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
                       className="w-full px-4 py-3 rounded-lg bg-white dark:bg-navy-950 border border-gray-200 dark:border-navy-700 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-all dark:text-white"
                       placeholder="john@example.com"
                     />
                   </div>
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-navy-900 dark:text-gray-200">Case Type</label>
-                    <select className="w-full px-4 py-3 rounded-lg bg-white dark:bg-navy-950 border border-gray-200 dark:border-navy-700 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-all dark:text-white appearance-none">
+                    <select 
+                      name="caseType"
+                      value={formData.caseType}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 rounded-lg bg-white dark:bg-navy-950 border border-gray-200 dark:border-navy-700 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-all dark:text-white appearance-none"
+                    >
                       <option value="">Select a practice area...</option>
                       <option value="criminal">Criminal Defense</option>
-                      <option value="corporate">Corporate Law</option>
                       <option value="family">Family & Divorce</option>
-                      <option value="civil">Civil Litigation</option>
                       <option value="other">Other</option>
                     </select>
                   </div>
@@ -102,27 +132,12 @@ export default function Contact() {
                   <label className="text-sm font-medium text-navy-900 dark:text-gray-200">Brief Description</label>
                   <textarea 
                     rows={4}
+                    name="description"
+                    value={formData.description}
+                    onChange={handleChange}
                     className="w-full px-4 py-3 rounded-lg bg-white dark:bg-navy-950 border border-gray-200 dark:border-navy-700 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-all dark:text-white resize-none"
                     placeholder="Please provide a brief overview of your situation..."
                   ></textarea>
-                </div>
-
-                <div className="space-y-3 pt-2">
-                  <label className="text-sm font-medium text-navy-900 dark:text-gray-200">Preferred Contact Method</label>
-                  <div className="flex space-x-6">
-                    <label className="flex items-center space-x-2 cursor-pointer">
-                      <input type="radio" name="contact" value="call" className="text-gold-500 focus:ring-gold-500" defaultChecked />
-                      <span className="text-gray-600 dark:text-gray-300">Call</span>
-                    </label>
-                    <label className="flex items-center space-x-2 cursor-pointer">
-                      <input type="radio" name="contact" value="email" className="text-gold-500 focus:ring-gold-500" />
-                      <span className="text-gray-600 dark:text-gray-300">Email</span>
-                    </label>
-                    <label className="flex items-center space-x-2 cursor-pointer">
-                      <input type="radio" name="contact" value="whatsapp" className="text-gold-500 focus:ring-gold-500" />
-                      <span className="text-gray-600 dark:text-gray-300">WhatsApp</span>
-                    </label>
-                  </div>
                 </div>
 
                 <button 

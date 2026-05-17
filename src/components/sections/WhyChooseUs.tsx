@@ -7,22 +7,22 @@ const reasons = [
   {
     icon: <UserCheck className="w-10 h-10 text-gold-500" />,
     title: "Personalized Attention",
-    description: "You are not a case number. We cap our caseload to ensure every client receives partner-level attention and bespoke strategy."
+    description: "You are not a case number. I cap my caseload to ensure every client receives dedicated attention and a bespoke strategy."
   },
   {
     icon: <Crosshair className="w-10 h-10 text-gold-500" />,
     title: "Courtroom-Tested Strategy",
-    description: "While we seek swift resolutions, we prepare every case as if it will go to trial. Opposing counsel knows we don't blink."
+    description: "While I seek swift resolutions, I prepare every case as if it will go to trial. Opposing counsel knows I don't back down."
   },
   {
     icon: <HandCoins className="w-10 h-10 text-gold-500" />,
     title: "Transparent Fees",
-    description: "No hidden costs, no surprise billing. We provide clear fee structures, including flat-fee arrangements for certain practice areas."
+    description: "No hidden costs, no surprise billing. I provide clear fee structures, including flat-fee arrangements for certain matters."
   },
   {
     icon: <Clock className="w-10 h-10 text-gold-500" />,
-    title: "24/7 Availability",
-    description: "Legal crises don't happen on a 9-to-5 schedule. Our premium clients have direct access to their lead attorney around the clock."
+    title: "Direct Accessibility",
+    description: "Legal crises don't happen on a 9-to-5 schedule. My clients have direct access to me when it matters most."
   }
 ];
 
@@ -32,10 +32,10 @@ export default function WhyChooseUs() {
       <div className="container mx-auto px-6 md:px-12">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl font-serif font-bold text-navy-900 dark:text-white mb-6">
-            Why Choose Us
+            Why Choose Me
           </h2>
           <p className="text-gray-600 dark:text-gray-300 text-lg">
-            In the legal arena, experience and reputation matter. Here is what sets us apart from conventional law firms.
+            In the legal arena, experience and reputation matter. Here is what sets my practice apart.
           </p>
         </div>
 

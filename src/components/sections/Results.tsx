@@ -6,24 +6,23 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const stats = [
-  { value: 500, suffix: "+", label: "Cases Won" },
-  { value: 250, suffix: "M+", label: "Recovered for Clients" },
-  { value: 15, suffix: "+", label: "Years of Practice" },
-  { value: 98, suffix: "%", label: "Success Rate" }
+  { value: 200, suffix: "+", label: "Cases Handled" },
+  { value: 5, suffix: "+", label: "Years of Practice" },
+  { value: 95, suffix: "%", label: "Success Rate" }
 ];
 
 const caseStudies = [
   {
-    type: "Corporate Litigation",
-    title: "$45M Breach of Contract Dispute",
-    description: "Successfully defended a tech conglomerate against a multi-million dollar intellectual property theft and breach of contract claim, resulting in a full dismissal.",
-    outcome: "Full Dismissal & Legal Fees Recovered"
+    type: "Criminal Defense",
+    title: "High-Stakes Criminal Acquittal",
+    description: "Represented a client facing serious criminal charges. Through rigorous cross-examination and meticulous evidence presentation, we secured a full acquittal.",
+    outcome: "Full Acquittal on All Charges"
   },
   {
-    type: "Criminal Defense",
-    title: "Federal White-Collar Fraud Case",
-    description: "Represented a CFO facing federal wire fraud charges. Through meticulous financial forensics, we proved lack of intent and secured an acquittal.",
-    outcome: "Full Acquittal on All Charges"
+    type: "Family & Divorce",
+    title: "High-Conflict Custody Battle",
+    description: "Successfully navigated a complex, high-conflict divorce and custody case, ensuring the client retained primary custody and secured a fair settlement.",
+    outcome: "Favorable Custody & Settlement"
   }
 ];
 
@@ -49,7 +48,7 @@ export default function Results() {
         </div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20 border-b border-navy-100 dark:border-navy-800 pb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20 border-b border-navy-100 dark:border-navy-800 pb-16 max-w-4xl mx-auto">
           {stats.map((stat, idx) => (
             <div key={idx} className="text-center md:text-left">
               <div className="text-5xl md:text-6xl font-serif font-bold text-navy-900 dark:text-white mb-2">
