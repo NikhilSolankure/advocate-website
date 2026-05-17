@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-navy-950">
+    <section className="relative min-h-[100svh] flex items-center justify-center pt-28 pb-48 md:pb-32 overflow-hidden bg-navy-950">
       {/* Background Image & Overlay */}
       <div 
         className="absolute inset-0 z-0 bg-[url('https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center bg-no-repeat opacity-40"
